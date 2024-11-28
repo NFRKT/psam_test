@@ -1,0 +1,24 @@
+User: Id_user
+      Login
+      Hasło
+      Imie
+      Nazwisko
+      Id_budget
+Expense: Id_expense
+         Amount
+         Repetetive Yes/No
+         Period
+         description
+         category                                                                                    Repetetive czy się powtarza np. Repetetive = Yes Period = 2 to co 2 miesiące  budget = [budget] - [ten wydatek]
+Income: Id_income                                                                                    Period = ilość miesięcy np. 3 to co 3 miesiące to będzie przychód lub wydatek, 0 to jednorazowa wpłata
+         Amount                                                                                      Period start i end określają kiedy zaczyna się cykl a kiedy kończy jeśli Repetetive = 0 to nic nie wpisujemy albo null zobaczymy jeszcze
+         Repetetive Yes/No                                                                             Period = ilość miesięcy np. 3 to co 3 miesiące to będzie przychód lub wydatek, 0 to jednorazowa wpłata
+         Period
+         Period_Start
+         Period_End
+         description
+         category
+Budget: Id_budget
+        Id_income
+        Id_expense
+        Limit
